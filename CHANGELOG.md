@@ -1,3 +1,6 @@
+## 2.0.1
+* Upgrade: iOS and Android SDK;
+
 ## 2.0.0+2
 
 * Null safety
