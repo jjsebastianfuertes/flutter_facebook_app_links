@@ -20,23 +20,14 @@ public class SwiftFlutterFacebookAppLinksPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     
     switch call.method {
-        case "getPlatformVersion":
-            handleGetPlatformVersion(call, result: result)
-            break
         case "initFBLinks":
             print("FB APP LINK launched")
             handleFBAppLinks(call, result: result)
             break
-        
         default:
             result(FlutterMethodNotImplemented)
         }
     
-  }
-
-  private func handleGetPlatformVersion(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    
-    result("iOS " + UIDevice.current.systemVersion)
   }
 
   private func handleFBAppLinks(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
